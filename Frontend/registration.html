@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registration | Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <!-- Brand -->
+            <div class="brand">
+                <h1>Student Portal</h1>
+                <p>Create your account</p>
+            </div>
+
+            <!-- Form Header -->
+            <div class="form-header">
+                <h2>Registration</h2>
+                <p>Enter your details to create an account</p>
+            </div>
+
+            <!-- Registration Form -->
+            <form id="registrationForm">
+
+                <!-- Roll Number -->
+                <div class="form-group">
+                    <label for="rollno">Roll Number</label>
+
+                    <input
+                        type="text"
+                        id="rollno"
+                        name="rollno"
+                        placeholder="Enter your roll number"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- Class -->
+                <div class="form-group">
+                    <label for="class">Class</label>
+
+                    <input
+                        type="text"
+                        id="class"
+                        name="class"
+                        placeholder="Enter your class"
+                        required
+                    >
+                </div>
+
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <label for="mobileno">Mobile Number</label>
+
+                    <input
+                        type="tel"
+                        id="mobileno"
+                        name="mobileno"
+                        placeholder="Enter your mobile number"
+                        autocomplete="tel"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="emailid">Email ID</label>
+
+                    <input
+                        type="email"
+                        id="emailid"
+                        name="emailid"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="password-toggle"
+                            aria-label="Show password"
+                        >
+                            <span class="eye-icon">👁️</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="toggleConfirmPassword"
+                            class="password-toggle"
+                            aria-label="Show confirm password"
+                        >
+                            <span class="eye-icon">👁️</span>
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Register Button -->
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    Register
+                </button>
+
+                <!-- Registration Message -->
+                <p
+                    id="registrationMessage"
+                    class="form-message"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+            <!-- Login Link -->
+            <div class="register-link">
+
+                <p>
+                    Already have an account?
+                    <a href="index.html">Login</a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Registration JavaScript -->
+    <script src="js/registration.js"></script>
+
+</body>
+</html>
