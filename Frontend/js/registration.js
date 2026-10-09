@@ -40,7 +40,7 @@ registrationForm.addEventListener("submit", async (event) => {
     }
 
     try {
-        const response = await fetch("deploymentdemo-production-c8d5.up.railway.app/registration", {
+        const response = await fetch("deploymentdemo-production-c8d5.up.railway.app/registration.html", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
