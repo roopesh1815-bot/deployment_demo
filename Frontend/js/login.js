@@ -34,7 +34,7 @@ loginForm.addEventListener("submit", async (event) => {
     }
 
     try {
-        const response = await fetch("deploymentdemo-production-c8d5.up.railway.app/login", {
+        const response = await fetch("https://deploymentdemo-production-c8d5.up.railway.app/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
